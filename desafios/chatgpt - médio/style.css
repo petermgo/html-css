@@ -1,0 +1,47 @@
+@charset "UTF-8"
+
+
+/* Centralizar a página inteira */
+body {
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente no centro */
+    align-items: center; /* Alinha verticalmente no centro */
+    height: 100vh; /* Garante que ocupe a altura total da tela */
+    margin: 0;
+}
+
+/* Centralizar o conteúdo dentro do body */
+.container {
+    display: flex;
+    flex-direction: column; /* Colocar os elementos em coluna, um abaixo do outro */
+    align-items: center; /* Centraliza o conteúdo dentro da coluna */
+}
+
+/* Estilo para o formulário */
+form {
+    display: flex;
+    flex-direction: column; /* Colocar os elementos em coluna, um abaixo do outro */
+    align-items: center; /* Centralizar os campos no meio horizontalmente */
+    width: 300px; /* Define a largura do formulário */
+}
+
+/* Estilo para os campos do formulário */
+input, textarea {
+    width: 100%; /* Ajusta a largura dos campos */
+    margin-bottom: 10px; /* Espaço entre os campos */
+    padding: 8px; /* Adiciona preenchimento interno */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+/* Ajustar a altura da textarea */
+textarea {
+    height: 100px; /* Define a altura da área de texto */
+}
+
+/* Estilo para o botão */
+input[type="submit"] {
+    box-shadow: 1px 1px 1px black;
+    width: auto; /* O botão fica com o tamanho automático */
+    padding: 10px 20px; /* Ajusta o padding do botão */
+    cursor: pointer; /* Estilo de cursor para o botão */
+}
